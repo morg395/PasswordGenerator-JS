@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.settings {
+    margin-bottom: 100px;
+}
+
+.password {
+    width: 600px;
+    height: 40px;
+    padding: 0px 15px;
+}
+
+.passwordLevel {
+    padding-bottom: 50px;
+}
+
+.generate {
+    margin-bottom: 50px;
+}

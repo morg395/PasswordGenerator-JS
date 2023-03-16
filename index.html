@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Генератор паролей</h1>
+    <div class="settings">
+        <div class="passwordLevel">
+            <h2>Выбери уровень пароля</h2>
+            <div class="passwordLevel-1">
+                <input class="easyLevel checkbox" onchange="generatePassword()" type="checkbox">
+                <label for="easyLevel" class="easyLevel passwordLevel-checkbox">Лёгкий</label>
+            </div>
+            <div class="passwordLevel-2">
+                <input class="middleLevel checkbox" onchange="generatePassword()" type="checkbox">
+                <label for="middleLevel" class="middleLevel passwordLevel-checkbox">Средний</label>
+            </div>
+            <div class="passwordLevel-3">
+                <input class="hardLevel checkbox" onchange="generatePassword()" type="checkbox">
+                <label for="hardLevel" class="hardLevel passwordLevel-checkbox">Сложный</label>
+            </div>
+        </div>
+        <h2>Количество символов (необязательно)</h2>
+        <input class="symbols" onchange="generatePassword()" placeholder="Количество символов" type="text">
+    </div>
+    <button class="generate">Сгенерировать</button>
+    <input type="text" class="password" placeholder="Сгенерированный пароль">
+    <button class="copyPassword">Скопировать пароль</button>
+    <script src="/js/app.js"></script>
+</body>
+</html>
